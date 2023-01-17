@@ -7,18 +7,12 @@
     <title>Formulario</title>
 </head>
 <body>
-    <form action="ejemplo.php" method="get">
-        <p>Nombre: <input type="text" name="nombre" size="40"></p>
-        <p>Profesión: <input type="text" name="profesion" size="40"></p>
-        <p>Edad: <input type="number" name="edad" min="0"></p>
-        <p>Sexo:
-          <input type="radio" name="hm" value="h"> Hombre
-          <input type="radio" name="hm" value="m"> Mujer
-        </p>
-        <p>
-          <input type="submit" value="Enviar">
-          <input type="reset" value="Borrar">
-        </p>
-      </form>
+  <h1>Regístrate</h1>
+  <form action="procesar.php" method="get">
+    <p>Correo electrónico<br> <input type="text" name="correo" size="40" placeholder="noombre@ejenmplo.com" required></p>
+    <p>Contraseña<br> <input type="text" name="contra" size="40" placeholder="Enter 8 characters or more" minlength="8" required></p>
+    <p>Repite la contraseña <br> <input type="text" name="confirmar contra" size="40" placeholder="Repite tu contraseña" required></p>
+    <p><input type="submit" value="REGÍSTRATE"></p>
+  </form>
 </body>
 </html>
